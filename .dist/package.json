@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "installProduction": "npm install --only=production",
+    "nextStart": "next start",
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "Title": "TwoTeam",
+  "Welcome": "Welcome",
+  "Sidebar": {
+    "Dashboard": "Dashboard",
+    "Audits": "Audits",
+    "Circuits": "Circuits",
+    "Calendar": "Calendar",
+    "Users": "Users",
+    "Graphs": "Graphs"
+  },
+  "UserMenu": {
+    "Profile": "Profile",
+    "Logout": "Logout",
+    "Tooltip": "Open Menu",
+    "Test": "Test"
+  },
+  "Std": {
+    "Cancel": "Cancel",
+    "Save": "Save",
+    "Edit": "Edit",
+    "Active": "Active",
+    "NoRows": "No rows",
+    "Start": "Start",
+    "End": "End",
+    "ViewDetails": "View details",
+    "Submit": "Submit",
+    "Submitting": "Submitting...",
+    "CancelGoBack": "Cancel and Go Back",
+    "GoBack": "Go Back",
+    "New": "New"
+  },
+  "LoginPage": {
+    "Title": "Login",
+    "ForgotPassword": "Forgot Your Password?",
+    "LoginBtn": "Login",
+    "SubmittingBtn": "Submitting...",
+    "Email": "Email",
+    "Password": "Password",
+    "ShowPassword": "Show Password",
+    "HidePassword": "Hide Password",
+    "TermsOfUse": "Terms of use",
+    "PrivacyPolicy": "Privacy",
+    "CookiesPolicy": "Cookie"
+  },
+  "DashboardPage": {
+    "Title": "Dashboard"
+  },
+  "AuditsPage": {
+    "Title": "Audits"
+  },
+  "Theme": {
+    "Theme": "Theme",
+    "SwitchTheme": "Switch Theme"
+  },
+  "ErrorPage": {
+    "Title": "Something went wrong!",
+    "Error": "Error",
+    "Message": "Message",
+    "Digest": "Digest",
+    "MaxRetryMessage": "Maximum retry attempts reached. Please try going back or refreshing the page.",
+    "GoBack": "Go Back",
+    "TryAgain": "Try again"
+  },
+  "ProfilePage": {
+    "Title": "Profile"
+  },
+  "ResetPasswordPage": {
+    "Title": "Reset Passwords",
+    "Profile": "Profile",
+    "PasswordMismatchError": "Passwords do not match",
+    "PasswordTooShortError": "Password too short (min: 6 characters)"
+  },
+  "ForgotPasswordPage": {
+    "Title": "Forgot Password",
+    "SendResetLink": "Send Reset Link"
+  },
+  "Toasts": {
+    "PasswordUpdated": {
+      "Title": "Password Updated",
+      "Message": "The password has been updated correctly."
+    },
+    "TabSwitch": {
+      "Title": "Warning",
+      "Message": "Can`t switch tab while editing."
+    }
+  },
+  "CircuitPage": {
+    "Title": "Circuits",
+    "State": "State",
+    "NewCircuit": "New Circuit",
+    "CircuitDetailTitle": "Detail"
+  },
+  "CalendarPage": {
+    "Title": "Calendar",
+    "NewEvent": "New Event",
+    "CalendarDetailTitle": "Detail"
+  },
+  "GraphsPage": {
+    "Title": "Graphs",
+    "NewGraph": "New Graph",
+    "GraphDetail": "Graph Detail"
+  }
+}

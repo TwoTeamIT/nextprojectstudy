@@ -1,0 +1,104 @@
+{
+  "Title": "TwoTeam",
+  "Welcome": "Benvenuto",
+  "Sidebar": {
+    "Dashboard": "Dashboard",
+    "Audits": "Audit",
+    "Circuits": "Circuiti",
+    "Calendar": "Calendario",
+    "Users": "Utenti",
+    "Graphs": "Grafici"
+  },
+  "UserMenu": {
+    "Profile": "Profilo",
+    "Logout": "Esci",
+    "Tooltip": "Apri menu",
+    "Test": "Test"
+  },
+  "Std": {
+    "Cancel": "Annulla",
+    "Save": "Salva",
+    "Edit": "Modifica",
+    "Active": "Attivo",
+    "NoRows": "Nessuna riga",
+    "Start": "Inizio",
+    "End": "Fine",
+    "ViewDetails": "Visualizza dettagli",
+    "Submit": "Salva",
+    "Submitting": "In corso...",
+    "CancelGoBack": "Annulla e torna Indietro",
+    "GoBack": "Torna Indietro",
+    "New": "Nuovo"
+  },
+  "LoginPage": {
+    "Title": "Accedi",
+    "ForgotPassword": "Password dimenticata?",
+    "LoginBtn": "Accedi",
+    "SubmittingBtn": "Caricando...",
+    "Email": "Email",
+    "Password": "Password",
+    "ShowPassword": "Mostra Password",
+    "HidePassword": "Nascondi Password",
+    "TermsOfUse": "Termini di utilizzo",
+    "PrivacyPolicy": "Informazioni Privacy",
+    "CookiesPolicy": "Informativa Cookie"
+  },
+  "DashboardPage": {
+    "Title": "Dashboard"
+  },
+  "AuditsPage": {
+    "Title": "Audit"
+  },
+  "Theme": {
+    "Theme": "Tema",
+    "SwitchTheme": "Cambia Tema"
+  },
+  "ErrorPage": {
+    "Title": "Qualcosa è andato storto!",
+    "Error": "Errore",
+    "Message": "Messaggio",
+    "Digest": "Digest",
+    "MaxRetryMessage": "Massimo numero di tentativi raggiunto. Per favore prova a tornare indietro o a ricaricare la pagina.",
+    "TryAgain": "Riprova",
+    "GoBack": "Indietro"
+  },
+  "ProfilePage": {
+    "Title": "Profilo"
+  },
+  "ResetPasswordPage": {
+    "Title": "Reimposta Passwords",
+    "Profile": "Profile",
+    "PasswordMismatchError": "Le password non corrispondono",
+    "PasswordTooShortError": "Password troppo corta (min: 6 caratteri)"
+  },
+  "ForgotPasswordPage": {
+    "Title": "Password dimenticata",
+    "SendResetLink": "Invia link di reset"
+  },
+  "Toasts": {
+    "PasswordUpdated": {
+      "Title": "Password Aggiornata",
+      "Message": "La password è stata aggiornata correttamente."
+    },
+    "TabSwitch": {
+      "Title": "Attenzione",
+      "Message": "Non puoi cambiare Tab durante la modifica."
+    }
+  },
+  "CircuitPage": {
+    "Title": "Circuiti",
+    "State": "Stato",
+    "NewCircuit": "Nuovo Circuito",
+    "CircuitDetailTitle": "Dettagli"
+  },
+  "CalendarPage": {
+    "Title": "Calendario",
+    "NewEvent": "Nuovo Evento",
+    "CalendarDetailTitle": "Dettagli"
+  },
+  "GraphsPage": {
+    "Title": "Grafici",
+    "NewGraph": "Nuovo Grafico",
+    "GraphDetail": "Dettaglio Grafico"
+  }
+}

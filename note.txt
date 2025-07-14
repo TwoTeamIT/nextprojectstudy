@@ -1,0 +1,7 @@
+Breakpoints:
+    sm  :  640 px
+    md  :  768 px
+    lg  : 1024 px
+    xl  : 1280 px
+    2xl : 1536 px
+    
