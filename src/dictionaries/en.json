@@ -44,7 +44,16 @@
     "CookiesPolicy": "Cookie"
   },
   "DashboardPage": {
-    "Title": "Dashboard"
+    "Title": "Dashboard",
+    "Card1Title": "Utenti attivi",
+    "Card1Description": "Numero di utenti attivi oggi.",
+    "Card2Title": "Report mensili",
+    "Card2Description": "Statistiche aggiornate del mese.",
+    "ViewReports": "Apri",
+    "Card3Title": "Ultimo accesso",
+    "LastAccessLabel": "15 luglio 2025, 10:45",
+    "ChartTitle": "Attività Utenti",
+    "LineChartLabel": "Attività"
   },
   "AuditsPage": {
     "Title": "Audits"

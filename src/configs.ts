@@ -10,4 +10,4 @@ export const DEBUG = false;
 export const MAX_ERROR_RETRY = 3;
 
 //da aggiungere per ogni rotta privata 8login necessary)
-export const PROTECTED_ROUTES = ['/dashboard', '/audits', '/profile', '/circuits', '/calendar', '/graphs'];
+export const PROTECTED_ROUTES = [];
