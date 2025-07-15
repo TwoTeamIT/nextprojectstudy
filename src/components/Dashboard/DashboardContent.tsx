@@ -4,7 +4,18 @@ import PageHeader from "@/components/PageHeader/PageHeader";
 import { LineChart, PieChart } from "@mui/x-charts";
 import { Box } from "@mui/material";
 
-export default function DashboardContent({ dict }: { dict: any }) {
+interface DashboardDict {
+    Title?: string;
+    Card1Title?: string;
+    Card1Description?: string;
+    Card2Title?: string;
+    Card2Description?: string;
+    Card3Title?: string;
+    LastAccessLabel?: string;
+    ViewReports?: string;
+}
+
+export default function DashboardContent({ dict }: { dict: DashboardDict }) {
     const cardStyle = {
         flex: "1 1 300px",
         background: "#f5f5f5",
@@ -14,7 +25,7 @@ export default function DashboardContent({ dict }: { dict: any }) {
 
     return (
         <>
-            <PageHeader title={dict.Title} />
+            <PageHeader title={dict.Title || "Dashboard"} />
             <section style={{ padding: "1rem" }}>
                 <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
                     <div style={cardStyle}>
