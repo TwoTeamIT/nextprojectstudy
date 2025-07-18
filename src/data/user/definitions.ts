@@ -305,3 +305,20 @@ export type ResetForgottenPasswordFormFields = {
 };
 
 export type ResetForgottenPasswordFormState = FormState<ResetForgottenPasswordFormFields>;
+
+
+// 1. Definisci lo schema singolo
+export const UserRowSchema = z.object({
+    id: z.number(),
+    name: z.string(),
+    rating: z.number(),
+    country: z.string(),
+    dateCreated: z.string().refine((val) => !isNaN(Date.parse(val)), {
+        message: "Invalid date string",
+    }),
+    isAdmin: z.boolean(),
+});
+
+export type UserRowSchemaFormState = z.infer<typeof UserRowSchema>;
+
+

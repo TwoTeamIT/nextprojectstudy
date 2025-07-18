@@ -1,7 +1,7 @@
 'use server';
 
 import { AuthUser, LoggedUser, LoginFormSchema, LoginFormState } from './definitions';
-import { createSession, deleteSession, getSession } from './stateless-session';
+import { createSession, deleteSession } from './stateless-session';
 import { encryptData } from '@/lib/encryptData';
 import { setFetchOptions } from '@/lib/formatFetchOptions';
 import { redirect } from 'next/navigation';
@@ -77,16 +77,16 @@ export async function logout() {
 }
 
 export async function getMyDetails(): Promise<LoggedUser | undefined> {
-    const session = await getSession();
-    if (!session || !session.user) return undefined;
+    //const session = await getSession();
+    //if (!session || !session.user) return undefined;
 
     const loggedUser: LoggedUser = {
-        id: session.user.id,
-        userName: session.user.userName,
-        firstName: session.user.firstName,
-        lastName: session.user.lastName,
-        email: session.user.email,
-        resetPassword: session.user.resetPassword
+        id: 0,  //session.user.id,
+        userName: "usernname", //session.user.userName,
+        firstName: "firstName", //session.user.firstName,
+        lastName: "lastName", //session.user.lastName,
+        email: "firstName.lastName@mail.com", //session.user.email,
+        resetPassword: false //session.user.resetPassword
     };
 
     return loggedUser;

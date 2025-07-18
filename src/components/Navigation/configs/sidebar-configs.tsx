@@ -2,9 +2,8 @@
 
 import {
   Dashboard,
-  EmojiEvents,  //qui vanno importate le immagini dalla MUi icons che voglio usare
-  EventNote,
-  GraphicEq,
+  EmojiEmotionsSharp,
+  EmojiPeople, EmojiTransportation,  //qui vanno importate le immagini dalla MUi icons che voglio usare
   Timeline,
 } from "@mui/icons-material";
 import { usePathname } from "next/navigation";
@@ -39,29 +38,37 @@ export const SidebarItems = (lang: Locale): SidebarItem[] => {
       isHomePage: true,
     },
     {
-      key: "graphs",
-      name: dictionaries[lang]?.Sidebar?.Graphs || "graphs",
-      href: "/graphs",
-      icon: <GraphicEq />,
-      active: isSidebarItemActive(pathname, "/graphs"),
+      key: "users",
+      name: dictionaries[lang]?.Sidebar?.Users || "users",
+      href: "/users",
+      icon: <EmojiPeople />,
+      active: isSidebarItemActive(pathname, "/users"),
       isHomePage: true,
     },
     {
-      key: "circuits",
-      name: dictionaries[lang]?.Sidebar?.Circuits || "Circuits",
-      href: "/circuits",
-      icon: <EmojiEvents />,  //questo fa riferimento all'import in testata della MUI
-      active: isSidebarItemActive(pathname, "/circuits"),
+      key: "snackbar",
+      name: dictionaries[lang]?.Sidebar?.SnackBar || "SnackBar",
+      href: "/snackbar",
+      icon: <EmojiEmotionsSharp />,  //questo fa riferimento all'import in testata della MUI
+      active: isSidebarItemActive(pathname, "/snackbar"),
       isHomePage: true,
     },
     {
-      key: "calendar",
-      name: dictionaries[lang]?.Sidebar?.Calendar || "Calendar",
-      href: "/calendar",
-      icon: <EventNote />,  //questo fa riferimento all'import in testata della MUI
-      active: isSidebarItemActive(pathname, "/calendar"),
+      key: "cards",
+      name: dictionaries[lang]?.Sidebar?.Cards || "Card",
+      href: "/cards",
+      icon: <EmojiTransportation />,  //questo fa riferimento all'import in testata della MUI
+      active: isSidebarItemActive(pathname, "/cards"),
       isHomePage: true,
     },
+    //{
+    //  key: "calendar",
+    //  name: dictionaries[lang]?.Sidebar?.Calendar || "Calendar",
+    //  href: "/calendar",
+    //  icon: <EventNote />,  //questo fa riferimento all'import in testata della MUI
+    //  active: isSidebarItemActive(pathname, "/calendar"),
+    //  isHomePage: true,
+    //},
     {
       key: "audits",
       name: dictionaries[lang]?.Sidebar?.Audits || "Audits",

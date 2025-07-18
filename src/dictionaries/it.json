@@ -5,15 +5,40 @@
     "Dashboard": "Dashboard",
     "Audits": "Audit",
     "Circuits": "Circuiti",
+    "Cards": "Cards",
     "Calendar": "Calendario",
     "Users": "Utenti",
-    "Graphs": "Grafici"
+    "Graphs": "Grafici",
+    "SnackBar": "SnackBar"
   },
   "UserMenu": {
     "Profile": "Profilo",
     "Logout": "Esci",
     "Tooltip": "Apri menu",
     "Test": "Test"
+  },
+  "CardsPage": {
+    "Title": "Cards",
+    "AddCard": "New Card",
+    "Name": "Name",
+    "Place": "Place",
+    "State": "State",
+    "Image": "Image svg",
+    "DialogCreate": "New Card",
+    "DialogEdit": "Edit Card"
+  },
+  "User": {
+    "Title": "Utenti",
+    "AddUser": "Aggiungi Utente",
+    "Name": "Nome",
+    "Email": "Email",
+    "Role": "Ruolo",
+    "Status": "Stato",
+    "Active": "Attivo",
+    "Inactive": "Inattivo",
+    "LastLogin": "Ultimo accesso",
+    "CreatedAt": "Creato il",
+    "UserDetail": "Dettaglio Utente"
   },
   "Std": {
     "Cancel": "Annulla",
@@ -109,5 +134,9 @@
     "Title": "Grafici",
     "NewGraph": "Nuovo Grafico",
     "GraphDetail": "Dettaglio Grafico"
+  },
+  "SnackBar": {
+    "Title": "SnackBar",
+    "Message": "Questo è un messaggio di esempio per lo SnackBar."
   }
 }

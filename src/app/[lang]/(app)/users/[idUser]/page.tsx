@@ -6,19 +6,19 @@ import { Locale } from "@/i18n-config";
 import { getDictionary } from "@/lib/get-dictionary";
 
 interface GraphDetailPageProps {
-    params: Promise<{ idGraph: string; lang: Locale }>;
-  }
+  params: Promise<{ idGraph: string; lang: Locale }>;
+}
 
 export default async function GraphDetailModal({
   params,
-}: GraphDetailPageProps ) {
+}: GraphDetailPageProps) {
   const { idGraph, lang } = await params;
   const masterDict = await getDictionary(lang);
   const dict = { ...masterDict.Std, ...masterDict.GraphsPage };
 
   return (
     <>
-    <Breadcrumbs
+      <Breadcrumbs
         lang={lang}
         baseLink="/graphs"
         label={dict.New}
@@ -28,7 +28,7 @@ export default async function GraphDetailModal({
       />
       <div className="flex flex-col mt-3 h-[86%]">
         <p className="text-sm text-gray-500">{idGraph.toString()}</p>
-        </div>
+      </div>
     </>
   );
 }

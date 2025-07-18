@@ -1,7 +1,11 @@
 "use server";
 
 import api from "@/lib/apiCaller";
-import { ForgottenPasswordUpdate, PasswordUpdate, ResetForgottenPasswordFormState, ResetPasswordFormState, ResetToken, SendResetLink, SendResetLinkFormState, UserLogin, UserLoginFormState } from "./definitions";
+import {
+    ForgottenPasswordUpdate, PasswordUpdate, ResetForgottenPasswordFormState, ResetPasswordFormState,
+    ResetToken, SendResetLink, SendResetLinkFormState, UserLogin, UserLoginFormState,
+    UserRowSchema, UserRowSchemaFormState
+} from "./definitions";
 import { createSession, getSession } from "../auth/stateless-session";
 import { encryptData } from "@/lib/encryptData";
 import { setFetchOptions } from "@/lib/formatFetchOptions";
@@ -13,7 +17,31 @@ import { Locale } from "@/i18n-config";
 import { ToastOptions } from "@/context/Toaster";
 import it from "@/dictionaries/it.json";
 import en from "@/dictionaries/en.json";
+import { faker } from '@faker-js/faker';
+import { z } from "zod";
 
+export async function getAllDemoUsers(): Promise<UserRowSchemaFormState[]> {
+    // Genera 100 righe fittizie
+    const rows = Array.from({ length: 100 }, (_, id) => ({
+        id,
+        name: faker.person.fullName(),
+        rating: faker.number.int({ min: 1, max: 5 }),
+        country: faker.location.country(),
+        dateCreated: faker.date.past().toISOString(),
+        isAdmin: faker.datatype.boolean(),
+    }));
+
+
+    // ✅ Corretto: validazione dell'array di oggetti
+    const parseResult = z.array(UserRowSchema).safeParse(rows);
+
+    if (!parseResult.success) {
+        console.error("Invalid data format from useDemoData:", parseResult.error);
+        return [];
+    }
+
+    return parseResult.data;
+}
 export async function saveUserLogin(
     state: UserLoginFormState | undefined,
     formData: FormData,

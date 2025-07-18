@@ -5,15 +5,40 @@
     "Dashboard": "Dashboard",
     "Audits": "Audits",
     "Circuits": "Circuits",
+    "Cards": "Cards",
     "Calendar": "Calendar",
     "Users": "Users",
-    "Graphs": "Graphs"
+    "Graphs": "Graphs",
+    "SnackBar": "SnackBar"
   },
   "UserMenu": {
     "Profile": "Profile",
     "Logout": "Logout",
     "Tooltip": "Open Menu",
     "Test": "Test"
+  },
+  "CardsPage": {
+    "Title": "Cards",
+    "AddCard": "New Card",
+    "Name": "Name",
+    "Place": "Place",
+    "State": "State",
+    "Image": "Image svg",
+    "DialogCreate": "New Card",
+    "DialogEdit": "Edit Card"
+  },
+  "User": {
+    "Title": "Users",
+    "AddUser": "Add User",
+    "Name": "Name",
+    "Email": "Email",
+    "Role": "Role",
+    "Status": "Status",
+    "Active": "Active",
+    "Inactive": "Inactive",
+    "LastLogin": "Last Login",
+    "CreatedAt": "Created At",
+    "UserDetail": "User Detail"
   },
   "Std": {
     "Cancel": "Cancel",
@@ -109,5 +134,9 @@
     "Title": "Graphs",
     "NewGraph": "New Graph",
     "GraphDetail": "Graph Detail"
+  },
+  "SnackBar": {
+    "Title": "SnackBar",
+    "Message": "This is a sample message for the SnackBar."
   }
 }

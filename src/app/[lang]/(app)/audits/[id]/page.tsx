@@ -2,8 +2,9 @@
 
 import Breadcrumbs from "@/components/Breadcrumbs/Breadcrumbs";
 import { Locale } from "@/i18n-config";
-import { getAuditDetails } from "@/data/audits/audits";
+//import { getAuditDetails } from "@/data/audits/audits";
 import { redirect } from "next/navigation";
+import { Audit } from "@/data/audits/definitions";
 
 import {
   Box,
@@ -24,8 +25,33 @@ export default async function AuditsDetailsPage({
   params,
 }: AuditsDetailsPageProps) {
   const { id, lang } = await params;
-
-  const audit = await getAuditDetails(id);
+  console.log("Audit ID:", id, "Language:", lang);
+  const audit: Audit = {
+    id: 1,
+    timeStampUTC: new Date().toISOString(),
+    auditFilterEvent: "LOGIN",
+    controller: "AuthController",
+    action: "create",
+    userIdentity: "user@example.com",
+    requestHeaders: JSON.stringify({
+      "Content-Type": "application/json",
+      Authorization: "Bearer token123",
+    }),
+    requestConnection: JSON.stringify({
+      remoteAddress: "192.168.0.1",
+      localPort: 443,
+    }),
+    requestPayload: JSON.stringify({
+      username: "user@example.com",
+      password: "******",
+    }),
+    responseStatus: 200,
+    responseResult: JSON.stringify({
+      result: "OK",
+      message: "Login successful",
+    }),
+    responseMessage: "Operation completed successfully",
+  }; //await getAuditDetails(id);
 
   if (!audit) return redirect("/audits");
 

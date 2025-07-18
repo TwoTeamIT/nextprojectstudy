@@ -23,10 +23,10 @@ interface ProfilePageProps {
   params: Promise<{ lang: Locale }>;
 }
 
-export default async function ProfilePage({ params }: ProfilePageProps) {
-  const { lang } = await params;
+export default async function ProfilePage({ }: ProfilePageProps) {
 
-  const masterDict = await getDictionary(lang);
+
+  const masterDict = await getDictionary("it");
   const dict = { ...masterDict.Std, ...masterDict.ProfilePage };
   const loggedUser = await getMyDetails();
 
