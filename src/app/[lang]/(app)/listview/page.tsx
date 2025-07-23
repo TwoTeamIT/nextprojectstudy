@@ -1,13 +1,19 @@
 
 import PageHeader from "@/components/PageHeader/PageHeader";
 import ListViewClient from "@/components/ListViewClient/ListViewClient";
+import { Locale } from "@/i18n-config";
 
 import { getDictionary } from "@/lib/get-dictionary";
 
-export default async function ListViewPage() {
+export default async function ListViewPage({
+    params,
+}: {
+    params: Promise<{ lang: Locale }>;
+}) {
 
 
-    const masterDict = await getDictionary("it");
+    const { lang } = await params;
+    const masterDict = await getDictionary(lang);
     const dict = { ...masterDict.Std, ...masterDict.Listview };
 
     return (
