@@ -5,15 +5,10 @@ import { Locale } from "@/i18n-config";
 
 import { getDictionary } from "@/lib/get-dictionary";
 
-export default async function ListViewPage({
-    params,
-}: {
-    params: Promise<{ lang: Locale }>;
-}) {
+export default async function ListViewPage() {
 
 
-    const { lang } = await params;
-    const masterDict = await getDictionary(lang);
+    const masterDict = await getDictionary("it");
     const dict = { ...masterDict.Std, ...masterDict.Listview };
 
     return (
