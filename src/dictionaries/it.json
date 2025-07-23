@@ -9,7 +9,8 @@
     "Calendar": "Calendario",
     "Users": "Utenti",
     "Graphs": "Grafici",
-    "SnackBar": "SnackBar"
+    "SnackBar": "SnackBar",
+    "Listview": "Lista Utenti"
   },
   "UserMenu": {
     "Profile": "Profilo",
@@ -29,6 +30,19 @@
   },
   "User": {
     "Title": "Utenti",
+    "AddUser": "Aggiungi Utente",
+    "Name": "Nome",
+    "Email": "Email",
+    "Role": "Ruolo",
+    "Status": "Stato",
+    "Active": "Attivo",
+    "Inactive": "Inattivo",
+    "LastLogin": "Ultimo accesso",
+    "CreatedAt": "Creato il",
+    "UserDetail": "Dettaglio Utente"
+  },
+  "Listview": {
+    "Title": "Lista Utenti",
     "AddUser": "Aggiungi Utente",
     "Name": "Nome",
     "Email": "Email",

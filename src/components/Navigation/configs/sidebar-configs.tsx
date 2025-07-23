@@ -46,11 +46,11 @@ export const SidebarItems = (lang: Locale): SidebarItem[] => {
       isHomePage: true,
     },
     {
-      key: "snackbar",
-      name: dictionaries[lang]?.Sidebar?.SnackBar || "SnackBar",
-      href: "/snackbar",
-      icon: <EmojiEmotionsSharp />,  //questo fa riferimento all'import in testata della MUI
-      active: isSidebarItemActive(pathname, "/snackbar"),
+      key: "listview",
+      name: dictionaries[lang]?.Sidebar?.Listview || "listview",
+      href: "/listview",
+      icon: <EmojiPeople />,
+      active: isSidebarItemActive(pathname, "/listview"),
       isHomePage: true,
     },
     {
@@ -59,6 +59,14 @@ export const SidebarItems = (lang: Locale): SidebarItem[] => {
       href: "/cards",
       icon: <EmojiTransportation />,  //questo fa riferimento all'import in testata della MUI
       active: isSidebarItemActive(pathname, "/cards"),
+      isHomePage: true,
+    },
+    {
+      key: "snackbar",
+      name: dictionaries[lang]?.Sidebar?.SnackBar || "SnackBar",
+      href: "/snackbar",
+      icon: <EmojiEmotionsSharp />,  //questo fa riferimento all'import in testata della MUI
+      active: isSidebarItemActive(pathname, "/snackbar"),
       isHomePage: true,
     },
     //{
