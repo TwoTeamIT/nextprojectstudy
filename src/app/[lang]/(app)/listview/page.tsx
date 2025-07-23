@@ -1,7 +1,6 @@
 
 import PageHeader from "@/components/PageHeader/PageHeader";
 import ListViewClient from "@/components/ListViewClient/ListViewClient";
-import { Locale } from "@/i18n-config";
 
 import { getDictionary } from "@/lib/get-dictionary";
 
