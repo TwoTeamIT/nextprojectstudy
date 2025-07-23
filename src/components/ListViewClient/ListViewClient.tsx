@@ -131,7 +131,7 @@ export default function ListView() {
                 type: 'actions',
                 field: 'actions',
                 width: 75,
-                //getActions: (params) => [<MessageAction {...params} />],
+                getActions: (params) => [<MessageAction key={`message-${params.id}`} {...params} />],
             },
         ];
     }, [data.columns]);
