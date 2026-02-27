@@ -1,14 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { buildBugReportEmail } from "@/lib/bugReportConfirmation";
-
-const JIRA_BASE_URL = "/";
-const JIRA_EMAIL = "support@twoteam.it";
-const JIRA_API_TOKEN = "";
-const JIRA_PROJECT_KEY = "TTEMP";
-const SUPPORT_EMAIL = "support@twoteam.it"; // support@twoteam.it
-const RESEND_API_KEY = "";
-const APP_NAME = "TwoTeamTestApp";
+import { JIRA_BASE_URL, JIRA_EMAIL, JIRA_API_TOKEN, JIRA_PROJECT_KEY, SUPPORT_EMAIL, RESEND_API_KEY, APP_NAME } from "@/configs";
 
 const resend = new Resend(RESEND_API_KEY);
 
