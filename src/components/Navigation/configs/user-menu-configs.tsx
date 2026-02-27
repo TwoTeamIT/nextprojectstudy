@@ -1,5 +1,5 @@
 import { logout } from "@/data/auth/auth";
-import { Logout, Person,  LiveHelp } from "@mui/icons-material";
+import { Logout, Person, LiveHelp } from "@mui/icons-material";
 import it from "@/dictionaries/it.json";
 import en from "@/dictionaries/en.json";
 import { Locale } from "@/i18n-config";
@@ -25,9 +25,9 @@ export const UserMenuItems = (lang: Locale): UserMenuItem[] => {
     },
     {
       key: "test",
-      name: dictionaries[lang]?.UserMenu?.Test || "test",
+      name: dictionaries[lang]?.UserMenu?.ReportBug || "Report a problem",
       icon: <LiveHelp />,
-      href: "/profile",
+      href: "/reportbug",
     },
     {
       key: "logout",

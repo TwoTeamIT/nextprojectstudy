@@ -16,7 +16,12 @@
     "Profile": "Profile",
     "Logout": "Logout",
     "Tooltip": "Open Menu",
-    "Test": "Test"
+    "Test": "Test",
+    "ReportBug": "Report a problem"
+  },
+  "Romaco": {
+    "Domenico": "Domenico Romaco",
+    "Nome": "Romaco Name"
   },
   "CardsPage": {
     "Title": "Cards",
