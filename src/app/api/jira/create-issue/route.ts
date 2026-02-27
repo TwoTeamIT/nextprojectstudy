@@ -2,12 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { buildBugReportEmail } from "@/lib/bugReportConfirmation";
 
-const JIRA_BASE_URL = "https://twoteamsrl.atlassian.net/";
+const JIRA_BASE_URL = "/";
 const JIRA_EMAIL = "support@twoteam.it";
-const JIRA_API_TOKEN = "ATATT3xFfGF024ep1hO2wffVObQPfVBK1gg9HMSJI1dtVJMf3moCP2aAJiVTrx32CyE2JlH-3I_8SR8JS9HXVw7GgELUqM3d63sg43GSCZq_2SwiJ5dBpNd0OaWJ5tbvSGVt-TSO0JP6sSj2d2IEqsgwEDmZjc2ZzeIb2uA5JUcdpAZJSeEo8B4=6EF11338";
+const JIRA_API_TOKEN = "";
 const JIRA_PROJECT_KEY = "TTEMP";
 const SUPPORT_EMAIL = "support@twoteam.it"; // support@twoteam.it
-const RESEND_API_KEY = "re_WPehfAxm_JDqzZdSCEt5J8rSkoSwABgBu";
+const RESEND_API_KEY = "";
 const APP_NAME = "TwoTeamTestApp";
 
 const resend = new Resend(RESEND_API_KEY);
