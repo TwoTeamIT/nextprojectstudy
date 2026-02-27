@@ -215,7 +215,7 @@ export default function ReportBugPage() {
                                     Report a Bug
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Describe the issue and we'll look into it as soon as possible.
+                                    Describe the issue and we&apos;ll look into it as soon as possible.
                                 </Typography>
                             </Box>
                         </Box>
