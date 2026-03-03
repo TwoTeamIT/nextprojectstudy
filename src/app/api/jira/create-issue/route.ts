@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { buildBugReportEmail } from "@/lib/bugReportConfirmation";
-import { JIRA_BASE_URL, JIRA_EMAIL, JIRA_API_TOKEN, JIRA_PROJECT_KEY, SUPPORT_EMAIL, RESEND_API_KEY, APP_NAME } from "@/configs";
+import { JIRA_BASE_URL, JIRA_EMAIL, JIRA_A_TKN, JIRA_PROJECT_KEY, SUPPORT_EMAIL, RESEND_API_KEY, APP_NAME } from "@/configs";
 
 const resend = new Resend(RESEND_API_KEY);
 
-const authHeader = Buffer.from(`${JIRA_EMAIL}:${JIRA_API_TOKEN}`).toString("base64");
+const authHeader = Buffer.from(`${JIRA_EMAIL}:${JIRA_A_TKN}`).toString("base64");
 
 const jiraFetch = (path: string, options: RequestInit) =>
   fetch(`${JIRA_BASE_URL}/rest/api/3${path}`, {
